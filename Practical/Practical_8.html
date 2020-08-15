@@ -1,181 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-7</title>
     <style>
-        #container
-        {
+        #container {
             border: 5px solid lightgray;
-            width:97%;
+            width: 97%;
             margin: 0px auto;
-            padding:8px;
+            padding: 8px;
 
 
         }
-        #header
-        {
-            display:flex;
+
+        #header {
+            display: flex;
             justify-content: center;
             align-items: center;
-            color:white;
-            height:80px;
+            color: white;
+            height: 80px;
             background-color: darkslategray;
             font-size: 40px;
-            width:100%;
+            width: 100%;
         }
-        #banner
-        {
-            display:flex;
+
+        #banner {
+            display: flex;
             justify-content: center;
             align-items: center;
-            color:white;
-            height:700px;
+            color: white;
+            height: 700px;
             background-color: peru;
             font-size: 40px;
-            margin-top:8px;
-            width:100%;
+            margin-top: 8px;
+            width: 100%;
         }
-        #section-1
-        {
+
+        #section-1 {
             justify-content: center;
-            background-color:indianred;
+            background-color: indianred;
             font-size: 40px;
             margin-top: 8px;
-            height:480px;
-            color:white;
-            width:100%;
+            height: 450px;
+            color: white;
+            width: 100%;
 
         }
-        
-        .circle
-        {
+
+        .circle {
             border-radius: 50%;
-            background-color:cadetblue;
-            width:251px;
-            height:251px;
-            float:left;
-            margin:31px;
+            background-color: cadetblue;
+            width: 251px;
+            height: 251px;
+            float: left;
+            margin: 31px;
         }
-        #section-2
-        {
 
-            background-color:white;
-            height:650px;
-            font-size:40px;
-            margin-top: 8px;
-            width:100%;
-            
-    
-        }
-        #left{
-            display:flex;
-            float:left;
-            justify-content: center;
-            align-items: center;
-            width:50%;
-            background-color: mediumpurple;
-            margin:8px 8px 8px 0px;
-            height:87%;
-            
-        }
-        #right{
-            float:right;
-            width:48%;
-            background-color:white;
-            height:87%;
-            margin:8px 0px 8px 8px;
-            
-        }
-        .a
-        {
-            width:100%;
-            height:173px;
-            background-color:turquoise;
-            display:flex;
-            justify-content: center;
-            align-items: center;
+        #section-2 {
 
-        }
-        #section-3
-        {
-            background-color:white;
-            height:530px;
-            font-size:40px;
-            margin-top: 8px;
-            width:100%;
-        }
-        .rect
-        {
-            background-color:firebrick;
-            width:251px;
-            height:330px;
-            float:left;
-            margin: 8px 33px;
-        }
-        #section-4
-        {
-            background-color:white;
-            height:145px;
+            background-color: white;
+            height: 650px;
             font-size: 40px;
-            margin-top:8px;
-            margin-bottom: 0px;
-            width:100%;
+            margin-top: 8px;
+            width: 100%;
+
+
         }
-        #footer
-        {
-            display:flex;
+
+        #left {
+            display: flex;
+            float: left;
+            width: 50%;
+            background-color: mediumpurple;
+            margin: 8px 8px 8px 0px;
+            height: 87%;
+
+        }
+
+        #right {
+            float: right;
+            width: 48%;
+            background-color: white;
+            height: 87%;
+            margin: 8px 0px 8px 8px;
+
+        }
+
+        .a {
+            width: 100%;
+            height: 173px;
+            display: flex;
             justify-content: center;
             align-items: center;
-            color:white;
-            height:80px;
+
+        }
+
+        #section-3 {
+            background-color: white;
+            height: 650px;
+            font-size: 40px;
+            margin-top: 8px;
+            width: 100%;
+        }
+
+        .rect {
+            float: left;
+            width: 20%;
+            margin: 20px 20px;
+            box-shadow: 0px 5px 5px darkgrey;
+            background-color: gray;
+        }
+
+        .rect h6 {
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        .rect img {
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        .rect a:hover {
+            background-color: blue;
+        }
+
+        .rect a {
+            display: block;
+            background-color: red;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+
+        #section-4 {
+            background-color: white;
+            height: 145px;
+            font-size: 40px;
+            margin-top: 8px;
+            margin-bottom: 0px;
+            width: 100%;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 80px;
             background-color: darkslategray;
             font-size: 40px;
         }
     </style>
 </head>
+
 <body>
     <div id="container">
-<div id="header">Header</div>
-<div id="banner">Banner</div>
-<div id="section-1">
-    <div style="justify-content: center; display: flex; padding: 10px;">Section-1</div>
-    <div class="circle">
-        <img style="object-fit: fill;" src="../image/P8member1.png" alt="">
-    </div>
-    <div class="circle">
-        <img style="object-fit: fill;" src="../image/P8member2.png" alt="">
-    </div>
-    <div class="circle">
-        <img style="object-fit: fill;" src="../image/P8member3.png" alt="">
-    </div>
-    <div class="circle">
-        <img style="object-fit: fills;" src="../image/P8member4.png" alt="">
-    </div>
-</div>
-<div id="section-2">
-    <div style="justify-content: center; display:flex; padding: 10px;">Section-2</div>
-    <div id="left">Main Content</div>
-    <div id="right">
-    <div class="a">Article-1</div>
-    <div class="a" style="margin: 23px 0px;">Article-2</div>
-    <div class="a">Article-3</div>
-    </div>
-</div>
-<div id="section-3">
-    <div style="justify-content: center; display:flex; padding: 10px;">Section-3</div>
-    <div class="rect"></div>
-    <div class="rect"></div>
-    <div class="rect"></div>
-    <div class="rect"></div>
-</div>
-<div id="section-4">
-    <div style="justify-content: center; display:flex; padding: 10px;">Section-4</div>
-    <div id="footer">Footer</div>
-</div>
+        <div id="header">Header</div>
+        <div id="banner">
+            <img style="height: 700px; width: 100% ;" src="../image/P8banner.jpg" alt="Banner">
+        </div>
+        <div id="section-1">
+            <div style="justify-content: center; display: flex; padding: 10px;">Section-1</div>
+            <div class="circle" style="margin-left: 100px;">
+                <img style="border-radius: 50%; width:100%; height:100%; ;" src="../image/P8member1.png" alt="">
+            </div>
+            <div class="circle">
+                <img style="border-radius: 50%; width:100%; height:100%;" src="../image/P8member2.png" alt="">
+            </div>
+            <div class="circle">
+                <img style="border-radius: 50%; width:251px; height:251px;" src="../image/P8member3.png" alt="">
+            </div>
+            <div class="circle">
+                <img style="border-radius: 50%; width:251px; height:251px;" src="../image/P8member4.png" alt="">
+            </div>
+        </div>
+        <div id="section-2">
+            <div style="justify-content: center; display:flex; padding: 10px;">About Us.</div>
+            <div id="left">
+                
+                <div style="font-size: 25px; text-align: justify; margin: 20px;"> <span style="font-size: 50px;">About Projects.</span> <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores facere, dolorum adipisci,
+                    expedita dolore beatae, ad illum fugit ratione facilis ut eligendi. Unde molestiae suscipit
+                    repellendus voluptates eligendi repudiandae nemo, alias officiis quo sed quos quisquam accusantium
+                    perspiciatis neque reprehenderit itaque necessitatibus doloremque! Ea quae, voluptatem sapiente
+                    eveniet, consequuntur praesentium in quo, expedita quos nihil ad iusto quod deleniti vitae voluptas
+                    molestias illo molestiae perspiciatis enim! Consectetur ratione quam odit, eius pariatur aliquid
+                    quos sint voluptates cumque sapiente veniam minima autem itaque nobis, atque repellendus, dolore ad
+                    reprehenderit doloribus illum tempore soluta. Esse quaerat doloribus, veritatis blanditiis quo
+                    eaque. ipsum dolor sit amet consectetur adipisicing elit. Sed molestias corporis voluptate sequi
+                    velit
+                    </div>
+            </div>
+            <div id="right">
+                <div class="a">
+                    <img src="../image/P8project1.jpg" style="width: 100%; height:173px ;" alt="Project 1">
+                </div>
+                <div class="a" style="margin: 23px 0px;">
+                    <img src="../image/P8project2.jpeg" style="width: 100%; height:173px ;" alt="Project 2"></div>
+                <div class="a">
+                    <img src="../image/P8project3.jpg" style="width: 100%; height:173px ;" alt="Project 3">
+                </div>
+            </div>
+        </div>
+        <div id="section-3">
+            <div style="justify-content: center; display:flex; padding: 10px;">Section-3</div>
+            <div class="rect" style="margin-left: 80px;">
+                <img src="..\image\P5html.png" style="height: 157px;" alt="HTML">
+                <h6>Introduction to HTML</h6>
+                <p style="text-align: justify; font-size: 20px; margin: 20px;">Hypertext Markup Language (HTML) is the
+                    standard markup language for documents
+                    designed to be displayed in a web browser.Its is a popular language. </p>
+                <a href="html.html">Read More</a>
+
+            </div>
+            <div class="rect">
+                <img src="..\image\P5css.png" alt="CSS">
+                <h6>Introduction to <br> CSS</h6>
+                <p style="text-align: justify; font-size: 20px; margin: 20px;">Cascading Style Sheets (CSS) is a style
+                    sheet language used for describing the
+                    presentation of a document written in a markup language.It is extensively used</p>
+                <a href="css.html">Read More</a>
+            </div>
+            <div class="rect">
+                <img src="..\image\P5javascript.jpg" alt="JAVASCRIPT">
+                <h6>Introduction to JavaScript</h6>
+                <p style="text-align: justify; font-size: 20px; margin:20px">JavaScript often abbreviated as JS, is a
+                    programming
+                    language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time
+                    compiled, and multi-paradigm. </p>
+                <a href="javascript.html">Read More</a>
+            </div>
+            <div class="rect">
+                <img src="..\image\P5boot.jpg" alt="BOOTSTRAP">
+                <h6>Introduction to Bootstrap</h6>
+                <p style="text-align: justify; font-size: 20px; margin: 20px;">Bootstrap is a free and open-source CSS
+                    framework directed at responsive,
+                    mobile-first front-end web development. It contains CSS- and (optionally) JavaScript</p>
+                <a href="boot.html">Read More</a>
+            </div>
+        </div>
+        <div id="section-4">
+            <div style="justify-content: center; display:flex; padding: 10px;">Contact.</div>
+            <div id="footer">Footer</div>
+        </div>
 
     </div>
-    
+
 </body>
+
 </html>
