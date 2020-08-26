@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-9</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 70px;
+            display:flex;
+            background-color: grey;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .header h2 {
+            line-height: 70px;
+            float: left;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .header .menu {
+            list-style: none;
+            text-align: center;
+        }
+
+        .menu li {
+            display: inline-block;
+            line-height: 70px;
+            position: relative;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: .4s;
+            width:150px;
+            display:block;
+        }
+
+        .menu li a:hover,
+        .show-btn:hover,
+        .hide-btn:hover {
+            background-color: indianred;
+        }
+
+        .show-btn,
+        .hide-btn {
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            transition: .4s;
+            display: none;
+        }
+
+        .show-btn {
+            float: right;
+        }
+
+        #chk {
+            visibility: hidden;
+            position: absolute;
+            z-index: -10;
+        }
+
+        @media(max-width: 800px) {
+
+            .show-btn,
+            .hide-btn {
+                display: block;
+            }
+
+            .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: black;
+                text-align: center;
+                padding: 80px 0;
+                line-height: normal;
+                transition: .7s;
+            }
+
+            #chk:checked~.menu {
+                right: 0;
+            }
+
+            .menu li {
+                display: block;
+            }
+
+            .menu li a {
+                display: block;
+            }
+
+            .hide-btn {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+        }
+        .content{
+            padding: 20px;
+        }
+        .content img{
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .content p{
+            text-align: justify;
+        }
+        .submenu1{
+            position: absolute;
+            background-color: grey;
+            width:150px;
+            left:0;
+            display: none;
+        }
+        .submenu2{
+            position: absolute;
+            background-color: grey;
+            width:150px;
+            left:100%;
+            top:0;
+            display: none;
+        }
+        .menu li:hover .submenu1{
+            display:block;
+        }
+        .submenu1 li:hover .submenu2{
+            display:block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Beta-Labs</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a>
+            <ul class="submenu1">
+                <li><a href="#">Front-End</a>
+                    <ul class="submenu2">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li></ul>
+                    </li>
+                <li><a href="#">Back-End</a>
+                    <ul class="submenu2">
+                        <li><a href="#">NodeJS</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Java</a></li>
+                         <li><a href="#">Ruby</a></li>
+                         <li><a href="#">PHP</a></li></ul></li>
+                
+            </ul></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+            <label for="chk" class="hide-btn">
+                <i class="fa fa-times"></i>
+            </label>
+        </ul>
+    </div>
+    <div>
+        <div class="content">
+            <img src="../image/P5html.png" alt="HTML">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur distinctio maiores iste saepe
+                incidunt quam unde qui dolor delectus eius corrupti ullam perferendis nisi vel, odit id nulla amet
+                aperiam molestias! Non amet sed ullam natus illum dolorem, corrupti qui? Consectetur, dolore officia
+                doloremque dolor sapiente error necessitatibus repellat quibusdam quaerat nisi reiciendis labore libero
+                voluptate eius. Aliquid in animi fuga sunt dignissimos perspiciatis at consectetur earum eveniet est
+                possimus obcaecati, accusamus necessitatibus adipisci, amet, culpa ut vitae. Quibusdam eveniet harum
+                vitae optio! Suscipit quas nostrum, odit molestiae, est quo facere reiciendis magni similique laborum
+                blanditiis corporis tempore delectus obcaecati?</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
