@@ -6,151 +6,330 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-9</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/P9.css">
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .header {
-            width: 100%;
-            height: 70px;
-            background-color: darkslategrey;
-            position: fixed;
-            top: 0;
-            z-index: 2;
-        }
-        .header .menu {
-            list-style: none;
-            float:right;
-        }
-
-        .menu li {
-            display: inline-block;
-            line-height: 70px;
-            width:170px;
-            text-align: center;
-        }
-
-        .menu li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            text-transform: uppercase;
-            transition: .4s;
-            padding:0px 20px;
-        }
-
-        .menu li:hover,
-        .show-btn:hover,
-        .hide-btn:hover {
-            background-color: indianred;
-        }
-
-        .show-btn,
-        .hide-btn {
-            font-size: 30px;
-            color: white;
-            line-height: 70px;
-            transition: .4s;
-            display: none;
-        }
-
-        .show-btn {
-            float: right;
-        }
-
-        #chk {
-            visibility: hidden;
-            position: absolute;
-            z-index: -10;
-        }
-
-        @media(max-width: 800px) {
-
-            .show-btn,
-            .hide-btn {
-                display: block;
-            }
-
-            .menu {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 100%;
-                height: 100vh;
-                background-color: black;
-                text-align: center;
-                padding: 80px 0;
-                line-height: normal;
-                transition: .7s;
-            }
-
-            #chk:checked~.menu {
-                right: 0;
-            }
-
-            .menu li {
-                display: block;
-                text-align: center;
-            }
-
-            .menu li a {
-                display: block;
-            }
-
-            .hide-btn {
-                position: absolute;
-                right: 20px;
-                top: 10px;
-            }
-        }
+       
+       
+        
         #banner{
             margin-top: 80px;
         }
         #banner h1{
             font-weight: bold;
             position:absolute;
-            font-size: 70px; 
             margin: 60px 0px 0px 40px; 
             z-index: 1; 
+            color: white;
+            font-size: 50px;
         }
         #banner img{
             height: 100%;
              width: 100%; 
         }
+        #section-1::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #section-1 {
+            background-color: indianred;
+            margin-top: 8px;
+            width: 100%;
+ }
+ .circlecontainer::after{
+            content: '';
+            display: block;
+            clear: both;
+        }  .circlecontainer{
+           width: 100%;
+           background-color:indigo;
+        }
+        .circle::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #section-1 .circle {
+            border-radius: 50%;
+            background-color: cadetblue;
+            width: 251px;
+            height: 251px;
+            float: left;
+            margin: 55px;
+        }
+        #section-1 h1{
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+        #section-1 img{
+            width:100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        
+        #section-2 {
+
+            background-color: white;
+            margin-top: 8px;
+            width: 100%;
+        }
+        #section-2::after{
+            content: '';
+            display: block;
+            clear: both;}
+
+        #section-2 h1{
+            text-align: center;
+            color: black;
+            padding: 20px;
+        }
+        #left::after{
+            content: '';
+            display: block;
+            clear: both;}
+        #left {
+            display: flex;
+            float: left;
+            width: 50%;
+            background-color: mediumpurple;
+            margin: 8px 8px 8px 0px;
+
+        }
+        #left p{
+            font-size: 25px;
+             text-align: justify;
+             margin: 20px;
+             color: white;
+        }
+        #right::after{
+            content: '';
+            display: block;
+            clear: both;}
+        #right {
+            float: right;
+            width: 48%;
+            background-color: white;
+            margin: 8px 0px 8px 8px;
+
+        }
+        .card {
+            width: 100%;
+            height: 173px;
+
+        }
+        #right img{
+            width: 100%; 
+            height:100% ;
+        }
+        #left {
+            display: flex;
+            float: left;
+            width: 50%;
+            background-color: mediumpurple;
+            margin: 8px 8px 8px 0px;
+            height: 87%;
+
+        }
+        #section-3 {
+            background-color: white;
+            margin-top: 8px;
+            width: 100%;
+            margin:auto;
+        }
+        #section-3::after{
+            content: '';
+            display: block;
+            clear: both;}
+            .cardcontainer::after{
+            content: '';
+            display: block;
+            clear: both;
+        }  .cardcontainer{
+           width: 100%;
+           background-color:indigo;
+           width:1250px;
+           margin:auto;
+        }
+        #section-3 h1{
+            color:black;
+            text-align: center;
+            padding:20px;
+        }
+        #section-3 p{
+            text-align: justify;
+            font-size: 20px;
+             margin: 20px; 
+             color: white;
+        }
+        .rect {
+            float: left;
+            width: 270px;
+            margin: 20px 20px;
+            box-shadow: 0px 5px 5px darkgrey;
+            background-color: gray;
+        }
+
+        .rect h6 {
+            margin: 0px 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .rect img {
+            width: 100%;
+            height:200px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        .rect a:hover {
+            background-color: blue;
+        }
+
+        .rect a {
+            display: block;
+            background-color: red;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+        #section-4::after{
+            content: '';
+            display: block;
+            clear: both;}
+        #section-4 {
+            background-color:coral;
+            margin-top: 8px;
+            width: 100%;
+            padding: 20px;
+        }
+        #section-4 h1{
+            color:white;
+            text-align: center;
+            padding: 20px;
+        }
+        #section-4 h4{
+            color:blue;
+            text-align: center;
+        }
+        
     </style>
 </head>
 
 <body>
-    <div class="header">
+    <div id="header">
         <input type="checkbox" id="chk">
         <label for="chk" class="show-btn">
             <i class="fa fa-bars"></i>
         </label>
         <ul class="menu">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">team</a></li>
-            <li><a href="#">Technologies</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#banner">home</a></li>
+            <li><a href="#section-2">about us</a></li>
+            <li><a href="#section-1">team</a></li>
+            <li><a href="#section-3">Technologies</a></li>
+            <li><a href="#section-4">contact</a></li>
             <label for="chk" class="hide-btn">
                 <i class="fa fa-times"></i>
             </label>
         </ul>
     </div>
-    <div id="banner">
-
-        <h1 id="bh" style="font-weight: bold;position:absolute;font-size: 70px; margin: 60px 0px 0px 40px; z-index: 1;">PRACTICAL 8</h1>
-
-
-        <img style="height: 100%; width: 100%; z-index: 1;" src="../image/P8banner.jpg" alt="Banner">
-        
-
-
+    <div id="banner"><h1 >PRACTICAL 8</h1>
+        <img src="../image/P8banner.jpg" alt="Banner">
+        </div>
+    <div id="section-1">
+            <h1>Team Members</h1>
+            <div class="circlecontainer">
+            <div class="circle">
+                <img  src="../image/P8member1.png" alt="">
+            </div >
+            <div class="circle">
+                <img src="../image/P8member2.png" alt="">
+            </div>
+            <div class="circle">
+                <img src="../image/P8member3.png" alt="">
+            </div>
+            <div class="circle">
+                <img  src="../image/P8member4.png" alt=""></div> </div>
     </div>
+    <div id="section-2">
+        <h1>About US</h1>
+        <div id="left">
+              <p> <span
+                    style="font-size: 40px; color: black;">About Projects.</span> <br><br> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Cumque asperiores facere, dolorum adipisci,
+                expedita dolore beatae, ad illum fugit ratione facilis ut eligendi. Unde molestiae suscipit
+                repellendus voluptates eligendi repudiandae nemo, alias officiis quo sed quos quisquam accusantium
+                perspiciatis neque reprehenderit itaque necessitatibus doloremque! Ea quae, voluptatem sapiente
+                eveniet, consequuntur praesentium in quo, expedita quos nihil ad iusto quod deleniti vitae voluptas
+                molestias illo molestiae perspiciatis enim! Consectetur ratione quam odit, eius pariatur aliquid
+                quos sint voluptates cumque sapiente veniam minima autem itaque nobis, atque repellendus, dolore ad
+                reprehenderit doloribus illum tempore soluta. Esse quaerat doloribus, veritatis blanditiis quo
+                eaque.reprehenderit doloribus illum tempore soluta. Esse quaerat doloribus, veritatis blanditiis quo
+                eaque.
+              </p>
+        </div>
+        <div id="right">
+            <div class="card">
+                <img src="../image/P8project1.jpg"  alt="Project 1">
+            </div>
+            <div class="card" style="margin: 25px 0px;">
+                <img src="../image/P8project2.jpeg" alt="Project 2"></div>
+            <div class="card">
+                <img src="../image/P8project3.jpg"  alt="Project 3">
+            </div>
+        </div>
+    </div>
+    <div id="section-3">
+        <h1>Technologies Used</h1>
+        <div class="cardcontainer">
+        <div class="rect">
+            <img src="..\image\P5html.png" alt="HTML">
+            <h6>Introduction to  HTML</h6>
+            <p>Hypertext Markup Language
+                (HTML) is the
+                standard markup language for documents
+                designed to be displayed in a web browser.Its is a popular language  and is extens </p>
+            <a href="html.html">Read More</a>
+
+        </div>
+        <div class="rect">
+            <img src="..\image\P5css.png" alt="CSS">
+            <h6>Introduction to  CSS</h6>
+            <p>Cascading Style Sheets (CSS) isa style
+                sheet language used for describing the
+                presentation of a document written in a markup language.It is extensively used</p>
+            <a href="css.html">Read More</a>
+        </div>
+        <div class="rect">
+            <img src="..\image\P5javascript.jpg" alt="JAVASCRIPT">
+            <h6>Introduction to JavaScript</h6>
+            <p>JavaScript often abbreviated as
+                JS, is a
+                programming
+                language that conforms to the ECMAScript specificati. JavaScript is high-level, often just in time
+                compiled</p>
+            <a href="javascript.html">Read More</a>
+        </div>
+        <div class="rect">
+            <img src="..\image\P5boot.jpg" alt="BOOTSTRAP">
+            <h6>Introduction to Bootstrap</h6>
+            <p>Bootstrap is a free and
+                open-source CSS
+                framework directed at responsive,
+                mobile-first front-end web development. It contains CSS- and (optionally) JavaScript</p>
+            <a href="boot.html">Read More</a>
+        </div>
+    </div>
+        <div id="section-4">
+            <h1>Contact</h1> <br> <br>
+            <h4>Website Template for Practical-8 @ <a href="https://www.beta-labs.in/">Beta-labs</a> </h4>
+            <h4> <a href="#header">Back to Top</a> </h4> </div> </div>
     
 
 </body>
