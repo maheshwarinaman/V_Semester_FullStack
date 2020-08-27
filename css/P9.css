@@ -93,9 +93,11 @@ html{
         content: '';
         display: block;
         clear: both;
-    }  .circlecontainer{
+    }
+      .circlecontainer{
        width: 100%;
-       background-color:indigo;
+       background-color:indianred;
+       padding-left: 50px;
     }
     .circle::after{
         content: '';
@@ -106,10 +108,10 @@ html{
     #section-1 .circle {
         border-radius: 50%;
         background-color: cadetblue;
-        width: 251px;
-        height: 251px;
+        width: 281px;
+        height: 281px;
         float: left;
-        margin: 55px;
+        margin: 20px;
     }
     #section-1 h1{
         color: white;
@@ -201,9 +203,8 @@ html{
         clear: both;
     }  .cardcontainer{
        width: 100%;
-       background-color:indigo;
-       width:1250px;
-       margin:auto;
+       background-color:white;
+       padding:80px;
     }
     #section-3 h1{
         color:black;
@@ -215,6 +216,8 @@ html{
         font-size: 20px;
          margin: 20px; 
          color: white;
+         height: 120px;
+         overflow: hidden;
     }
     .rect {
         float: left;
@@ -330,7 +333,6 @@ html{
     .circlecontainer{
         max-width:865px;
         margin: auto;
-        justify-content: space-evenly;
     }
     .circle{
         min-width: 290px;
@@ -339,9 +341,11 @@ html{
     .cardcontainer{
         max-width:865px;
         margin :auto;
+        padding-left: 10px;
     }
     .rect{
-        min-width: 379px;
+        min-width: 345px;
+        float: left;
     }
     #left p{
         overflow: hidden;
@@ -359,15 +363,17 @@ html{
         margin: auto;
     }
     .circle{
-        max-width: 187px;
-        max-height: 187px;
+        max-width: 207px;
+        max-height: 207px;
     }
     .cardcontainer{
         max-width:599px;
-        margin :auto;
+        padding-left: 10px;
+        margin: auto;
     }
+    
     .rect{
-        max-width: 254px;
+        max-width: 214px;
     }
     #left p{
         overflow: hidden;
@@ -380,20 +386,31 @@ html{
         min-width: 100%;
     }
 }
-    
-}
 @media(max-width:599px) and (min-width:320px)
 {
-    #header, #section-3,.cardcontainer,#section-4,,#section-1{
-      width: 100%;
-    }
-    #banner{
+    #left {
+        max-height: 568px;
         min-width: 100%;
     }
-    .circle{
-        margin-left: auto;
-        margin-right: auto;
-        min-width: 580px;
-        min-height: 580px;
+    #right{
+        width: 100%;
     }
+    .circle{
+        min-width: 100%;
+        min-height:100%;
+        margin:auto;
+    }
+    .rect{
+        min-width:80%;
+        margin:auto;
+        padding-bottom: 10px;
+    }
+    #banner h1{
+        font-size: 20px;
+    }
+    .circlecontainer{
+        padding:0;
+    }
+    
+
 }
