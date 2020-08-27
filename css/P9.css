@@ -407,7 +407,7 @@ html{
         padding-bottom: 10px;
     }
     .rect p{
-        overflow: hidden;
+        overflow:hidden;
     }
     #banner h1{
         font-size: 20px;
@@ -422,8 +422,6 @@ html{
             display: block;
             clear: both;
         }
-        
-    }
     
 
 }
