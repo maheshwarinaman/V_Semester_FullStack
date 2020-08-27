@@ -386,7 +386,7 @@ html{
         min-width: 100%;
     }
 }
-@media(max-width:599px) and (min-width:449px)
+@media(max-width:599px) and (min-width:100px)
 {
     #left {
         max-height: 568px;
@@ -423,7 +423,7 @@ html{
             clear: both;
         }
         
-    }
+    
     
 
 }
