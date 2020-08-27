@@ -412,16 +412,6 @@ html{
     #banner h1{
         font-size: 20px;
     }
-        .circlecontainer::after{
-            content: '';
-            display: block;
-            clear: both;
-        }
-        .cardcontainer::after{
-            content: '';
-            display: block;
-            clear: both;
-        }
     
 
 }
