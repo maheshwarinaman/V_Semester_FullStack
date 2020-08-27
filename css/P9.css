@@ -386,7 +386,7 @@ html{
         min-width: 100%;
     }
 }
-@media(max-width:599px) and (min-width:320px)
+@media(max-width:599px) and (min-width:449px)
 {
     #left {
         max-height: 568px;
@@ -398,18 +398,31 @@ html{
     .circle{
         min-width: 80%;
         min-height:80%;
-        margin:auto;
+        margin-left:auto;
+        margin-right: auto;
     }
     .rect{
-        min-width:80%;
-        margin:auto;
+        min-width:90%;
+        margin-right:20%;
         padding-bottom: 10px;
+    }
+    .rect p{
+        overflow: hidden;
     }
     #banner h1{
         font-size: 20px;
     }
-    .circlecontainer{
-        padding:0;
+        .circlecontainer::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .cardcontainer::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
     }
     
 
