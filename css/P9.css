@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -108,8 +109,8 @@ html{
     #section-1 .circle {
         border-radius: 50%;
         background-color: cadetblue;
-        width: 281px;
-        height: 281px;
+        width: 280px;
+        height: 280px;
         float: left;
         margin: 20px;
     }
@@ -157,6 +158,7 @@ html{
          text-align: justify;
          margin: 20px;
          color: white;
+         overflow:auto;
     }
     #right::after{
         content: '';
@@ -290,7 +292,7 @@ html{
             top: 0;
             right: -100%;
             width: 100%;
-            height: 100vh;
+            height: 60vh;
             background-color: black;
             padding: 80px 0;
             line-height: normal;
@@ -348,7 +350,7 @@ html{
         float: left;
     }
     #left p{
-        overflow: hidden;
+        overflow:auto;
     }
     #left {
         max-height: 568px;
@@ -368,15 +370,15 @@ html{
     }
     .cardcontainer{
         max-width:599px;
-        padding-left: 10px;
         margin: auto;
+        padding-left: 10px;
     }
     
     .rect{
         max-width: 214px;
     }
     #left p{
-        overflow: hidden;
+        overflow: auto;
     }
     #left {
         max-height: 568px;
@@ -386,31 +388,49 @@ html{
         min-width: 100%;
     }
 }
-@media(max-width:599px) and (min-width:449px)
+@media(max-width:599px) and (min-width:320px)
 {
     #left {
         max-height: 568px;
         min-width: 100%;
     }
     #right{
-        width: 100%;
+        min-width: 100%;
     }
     .circle{
         min-width: 80%;
+        width:100px;
+        height:100px;
         min-height:80%;
-        margin-left:auto;
-        margin-right: auto;
+        margin-left:0vh;
+        margin-right: 0vh;
     }
     .rect{
-        min-width:90%;
-        margin-right:20%;
-        padding-bottom: 10px;
+        max-width:90%;
+        padding: 10px;
     }
     .rect p{
-        overflow:hidden;
+        overflow: hidden;
     }
     #banner h1{
         font-size: 20px;
+    }
+    .cardcontainer{
+        margin:auto;
+        padding:0;
+        max-width:260px;
+        background-color:white;
+
+    }
+    .circlecontainer{
+        margin:auto;
+        padding:0;
+        max-width:290px;
+        background-color:indianred;
+
+    }
+    #section-1{
+        padding:0;
     }
     
 
