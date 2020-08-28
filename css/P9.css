@@ -10,6 +10,11 @@ html{
     scroll-padding: 80px 0px 0px;
     
 }
+#content{
+    width: 100%;
+    padding: 0px 1% 1%;
+    background-color: white;
+}
 
 #header {
     width: 100%;
@@ -90,15 +95,16 @@ html{
         margin-top: 8px;
         width: 100%;
 }
-.circlecontainer::after{
-        content: '';
-        display: block;
-        clear: both;
-    }
+
+
       .circlecontainer{
        width: 100%;
        background-color:indianred;
-       padding-left: 50px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: center;
     }
     .circle::after{
         content: '';
@@ -107,12 +113,7 @@ html{
     }
 
     #section-1 .circle {
-        border-radius: 50%;
-        background-color: cadetblue;
-        width: 280px;
-        height: 280px;
-        float: left;
-        margin: 20px;
+        margin: 20px 30px;
     }
     #section-1 h1{
         color: white;
@@ -120,8 +121,8 @@ html{
         padding-top: 20px;
     }
     #section-1 img{
-        width:100%;
-        height: 100%;
+        width:250px;
+        height: 250px;
         border-radius: 50%;
     }
     
@@ -206,7 +207,11 @@ html{
     }  .cardcontainer{
        width: 100%;
        background-color:white;
-       padding:80px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: center;
     }
     #section-3 h1{
         color:black;
@@ -219,11 +224,11 @@ html{
          margin: 20px; 
          color: white;
          height: 120px;
-         overflow: hidden;
+         overflow: auto;
     }
     .rect {
         float: left;
-        width: 270px;
+        width: 240px;
         margin: 20px 20px;
         box-shadow: 0px 5px 5px darkgrey;
         background-color: gray;
@@ -322,116 +327,52 @@ html{
         
     
 }
-@media (min-width: 869px) and (max-width: 1443px){
-    .show-btn,.hide-btn{
-        display:none;
-    }
-    #chk{
-        visibility: hidden;
-    }
-    #section-1{
-        padding:30px;
-    }
-    .circlecontainer{
-        max-width:865px;
-        margin: auto;
-    }
-    .circle{
-        min-width: 300px;
-        min-height: 300px;
-    }
-    .cardcontainer{
-        max-width:865px;
-        margin :auto;
-        padding-left: 10px;
+@media(min-width:901px) and (max-width: 1239px){
+    #section-1 img{
+        width:355px;
+        height:355px;
     }
     .rect{
-        min-width: 345px;
-        float: left;
-    }
-    #left p{
-        overflow:auto;
-    }
-    #left {
-        max-height: 568px;
-    }
-
-
-}
-
-@media(min-width: 600px) and (max-width:868px) {
-   .circlecontainer{
-        max-width:599px;
-        margin: auto;
-    }
-    .circle{
-        max-width: 207px;
-        max-height: 207px;
-    }
-    .cardcontainer{
-        max-width:599px;
-        margin: auto;
-        padding-left: 10px;
+        width: 375px;
     }
     
-    .rect{
-        max-width: 214px;
-    }
-    #left p{
-        overflow: auto;
-    }
-    #left {
-        max-height: 568px;
-        min-width:100%;
-    }
-    #right{
-        min-width: 100%;
+    #left{
+        margin-bottom: 25px;
     }
 }
-@media(max-width:599px) and (min-width:320px)
-{
-    #left {
-        max-height: 568px;
-        min-width: 100%;
+
+@media(min-width:620px) and (max-width: 900px){
+    #left{
+        width:100%;
     }
     #right{
-        min-width: 100%;
-    }
-    .circle{
-        min-width: 80%;
-        width:100px;
-        height:100px;
-        min-height:80%;
-        margin-left:0vh;
-        margin-right: 0vh;
+       width:100%;
     }
     .rect{
-        max-width:90%;
-        padding: 10px;
-    }
-    .rect p{
-        overflow: hidden;
+        width: 270px;
     }
     #banner h1{
-        font-size: 20px;
+        font-size: 35px;
     }
-    .cardcontainer{
-        margin:auto;
-        padding:0;
-        max-width:260px;
-        background-color:white;
-
+    #left{
+        margin-bottom: 25px;
     }
-    .circlecontainer{
-        margin:auto;
-        padding:0;
-        max-width:290px;
-        background-color:indianred;
-
+}
+@media(max-width: 619px){
+    #banner h1{
+        font-size: 30px;
     }
-    #section-1{
-        padding:0;
+    .rect{
+        width: 100%;
     }
-    
-
+    #left{
+        width: 100%;
+    }
+    #right{
+        width: 100%;
+    }
+    #section-1 img{
+        width:100%;
+        height:100%;
+    }
 }
