@@ -118,4 +118,10 @@ a i{
     .header h1{
         display: none;
     }
+    .content{
+        z-index: 1;
+    }
+   .sidebar{
+    z-index: 2;
+}
 }
