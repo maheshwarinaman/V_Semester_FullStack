@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
     position:fixed;
-    z-index: 2;
 }
 .header img{
     width: 70px;
@@ -30,9 +29,8 @@
     padding:20px;
     transition: .7s;
     float: right;
-    position: relative;
-    top:70px;
-    z-index: 1;
+    margin-top: 70px;
+
 }
 .content img{
     width:100%;
@@ -93,7 +91,6 @@ a i{
     top:16px;
     left: 20px;
     color: white;
-    z-index: 3;
 }
 .hide-btn{
     opacity: 0;
@@ -118,10 +115,7 @@ a i{
     .header h1{
         display: none;
     }
-    .content{
-        z-index: 1;
-    }
-   .sidebar{
-    z-index: 2;
+   
+    
 }
 }
