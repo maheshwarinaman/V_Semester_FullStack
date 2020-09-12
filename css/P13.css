@@ -72,13 +72,15 @@ i{
     display: inline-block;
     padding: 10px 25px;
     color: white;
-    background-color: red;
+    background-color:#007ee5;
     margin-left: 10px;
     border-radius: 20px;
     font-size: 22px;
+    transition:0.7s;
 }
 .sec-2 a:hover{
-    background-color: orange;
+    background-color: #09b83e;
+    padding:10px 30px;
 }
 .sec-3{
     display: flex;
@@ -138,7 +140,7 @@ i{
     position: absolute;
     right: 0;
     bottom: -10px;
-    background-color: yellow;
+    background-color: #007ee5;
     transition: all .3s;
 }
 .sec-4 p:hover::after{
@@ -219,13 +221,15 @@ hr{
         display: inline-block;
         padding: 10px 25px;
         color: white;
-        background-color: red;
+        background-color: #007ee5;
         margin-left: 10px;
         border-radius: 20px;
         font-size: 22px;
+        transition:0.7s;
     }
     .sec-2 a:hover{
-        background-color: orange;
+        background-color: #09b83e;
+        padding: 10px 30px;
     }
     .sec-3{
         display: flex;
@@ -285,7 +289,7 @@ hr{
         position: absolute;
         right: 0;
         bottom: -10px;
-        background-color: yellow;
+        background-color: #007ee5;
         transition: all .3s;
     }
     .sec-4 p:hover::after{
@@ -366,13 +370,15 @@ hr{
         display: inline-block;
         padding: 10px 25px;
         color: white;
-        background-color: red;
+        background-color: #007ee5;
         margin-left: 10px;
         border-radius: 20px;
         font-size: 22px;
+        transition:0.7s;
     }
     .sec-2 a:hover{
-        background-color: orange;
+        background-color: #09b83e;
+        padding:10px 30px;
     }
     .sec-3{
         display: flex;
@@ -432,7 +438,7 @@ hr{
         position: absolute;
         right: 0;
         bottom: -10px;
-        background-color: yellow;
+        background-color: #007ee5;
         transition: all .3s;
     }
     .sec-4 p:hover::after{
