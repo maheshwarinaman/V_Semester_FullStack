@@ -25,7 +25,7 @@ function checkValid() {
   var confirmCheck = document.getElementById("confirm-check");
   if (username.value.trim() === "") {
     username.style.borderBottom = "1px red solid";
-    userMsg.innerHTML = "* User Name cannot be Blank";
+    userMsg.innerHTML = " User Name cannot be Blank";
     userMsg.style.visibility = "visible";
     nameFails.style.visibility = "visible";
   } else {
@@ -36,7 +36,7 @@ function checkValid() {
       username.style.borderBottom = "1px green solid";
     } else {
       username.style.borderBottom = "1px red solid";
-      userMsg.innerHTML = "* User Name should only contain lower case with no special symbols";
+      userMsg.innerHTML = " User Name should only contain lower case with no special symbols";
       userMsg.style.visibility = "visible";
       nameFails.style.visibility = "visible";
       nameCheck.style.visibility = "hidden";
@@ -44,7 +44,7 @@ function checkValid() {
   }
   if (email.value.trim() === "") {
     email.style.borderBottom = "1px red solid";
-    emailError.innerHTML = "* Email Id cannot be Blank";
+    emailError.innerHTML = "Email Id cannot be Blank";
     emailError.style.visibility = "visible";
     emailFails.style.visibility = "visible";
   } else {
@@ -55,7 +55,7 @@ function checkValid() {
       email.style.borderBottom = "1px green solid";
     } else {
       email.style.borderBottom = "1px red solid";
-      emailError.innerHTML = "* Enter a valid Email Id";
+      emailError.innerHTML = " Enter a valid Email Id";
       emailError.style.visibility = "visible";
       emailFails.style.visibility = "visible";
       emailcheck.style.visibility = "hidden";
@@ -63,7 +63,7 @@ function checkValid() {
   }
   if (password.value.trim() === "") {
     password.style.borderBottom = "1px red solid";
-    passwordError.innerHTML = "* Password 1 can not be Blank";
+    passwordError.innerHTML = " Password 1 can not be Blank";
     passwordError.style.visibility = "visible";
     passwordFails.style.visibility = "visible";
   } else {
@@ -74,7 +74,7 @@ function checkValid() {
   }
   if (confirm.value.trim() === "") {
     confirm.style.borderBottom = "1px red solid";
-    confirmError.innerHTML = "* Password 2 can not be Blank";
+    confirmError.innerHTML = " Password 2 can not be Blank";
     confirmError.style.visibility = "visible";
     confirmFails.style.visibility = "visible";
   } else {
@@ -85,7 +85,7 @@ function checkValid() {
       confirm.style.borderBottom = "1px green solid";
     } else {
       confirm.style.borderBottom = "1px red solid";
-      confirmError.innerHTML = "* Password Should be same as above";
+      confirmError.innerHTML = " Password Should be same as above";
       confirmError.style.visibility = "visible";
       confirmFails.style.visibility = "visible";
       confirmCheck.style.visibility = "hidden";
