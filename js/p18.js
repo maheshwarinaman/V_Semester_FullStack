@@ -36,7 +36,7 @@ function checkValid() {
       username.style.borderBottom = "1px green solid";
     } else {
       username.style.borderBottom = "1px red solid";
-      userMsg.innerHTML = " User Name should only contain lower case with no special symbols";
+      userMsg.innerHTML = "only lowercase with no special symbols";
       userMsg.style.visibility = "visible";
       nameFails.style.visibility = "visible";
       nameCheck.style.visibility = "hidden";
